@@ -700,12 +700,7 @@ public class BoardController {
 
 				return "redirect:notice_admin_popup.do";
 			}
-			@GetMapping("/test.do")
-			public String test() {
 
-				return MODULE_NAME + "/home";
-				
-			}
 			@GetMapping("/list_admin.do")
 			public String list_admin(Model model, pageObject pageObject, HttpServletRequest request) {
 				HttpSession session = request.getSession();
